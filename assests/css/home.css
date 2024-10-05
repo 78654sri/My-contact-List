@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    font-family: "Nerko One", cursive;
+  font-weight: 800;
+  font-style: normal;
+}
+#page-head{
+    text-align:center;
+    margin-top:25px;
+    color:pink;
+}
+.flexing{
+    display:flex;
+    gap:20px;
+    background-color:#D0BDF0;
+    width:50%;
+    justify-content:space-around;
+    align-items:center;
+    border-top:2px solid white;
+    border-radius:10px;
+
+}
+.delete-icon{
+    color:hsla(0, 100%, 50%, 0.3);
+    
+}
+.centi{
+  margin-left:500px;
+  border-radius:10px;
+}
+.para{
+   color:white;
+   font-weight:10px;
+   font-size:25px;
+   border-radius:10px;
+ 
+   
+}
+.fomi{
+    text-align:center;
+    padding:20px;
+    margin-left:50px;
+
+}
+.inp{
+    padding:10px;
+    background-color:pink;
+    border:none;
+ 
+    border-radius:5px;
+    color:black;
+    font-family: "Nerko One", cursive;
+    font-weight: 800;
+    font-style: normal;
+
+}
+.button{
+    background-color:#BFB9FA;
+    padding:10px;
+    color:white;
+    border-radius:5px;
+    font-family: "Nerko One", cursive;
+    font-weight: 800;
+    font-style: normal;
+    border:none;
+}

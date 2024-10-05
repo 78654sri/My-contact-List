@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1 id="page-head"><i class="fas fa-user"></i> My ContactList</h1>
+    
+    <!-- Search form -->
+
+    
+    <div>
+        <ul class="centi">
+            <% for (let i of contact_List) { %>
+                <li class="flexing">
+                    <p class="para"><%= i.name %></p>
+                    <p class="para"><%= i.phone %></p>
+                    <div class="delete-button">
+                        <a href="/delete-contact/?phone=<%= i.phone %>" class="delete-icon"><i class="fas fa-trash-alt"></i></a>
+                    </div>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+
+    <form class="fomi" action="/create-contact" method="POST">
+         <input class="inp" type="text" name="name" placeholder="Enter name" required>
+         <input class="inp" type="text" name="phone" placeholder="Enter phone number" required>
+        <button class="button" type="submit">ADD CONTACT</button>
+    </form>
+    <script type="text/javascript" src="/js/home.js"></script>
+</body>
+</html>
